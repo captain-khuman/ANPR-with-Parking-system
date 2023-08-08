@@ -2,11 +2,19 @@
 
 Design:
 
-An Automatic Number Plate Recognition (ANPR) is a computer vision project that detects and recognizes vehicle license plates from images or video streams.
-The ANPR project typically involves capturing the license plate image using cameras, pre-processing the image (such as cropping, contrast stretching, and noise reduction), extracting the characters from the image, and finally recognizing the characters using Optical Character Recognition (OCR).
-OpenCV is an open-source computer vision library that is used for image processing and computer vision tasks. It can be used to capture license plate images, resize them, and apply various image processing techniques.
-PyTesseract is a wrapper for the Tesseract OCR engine, an open-source OCR engine developed by Google. It can be used to recognize the characters from the license plate images.
+The ANPR with Parking System is a computer vision project that incorporates Automatic Number Plate Recognition (ANPR) to detect and recognize vehicle license plates from images or video streams. The project involves several stages, including license plate image capture, image preprocessing, character extraction, and Optical Character Recognition (OCR) for character recognition. 
+OpenCV, an open-source computer vision library, is utilized for image processing tasks such as license plate image capture, resizing, and applying various image processing techniques. 
+PyTesseract, a wrapper for the Tesseract OCR engine developed by Google, is employed for character recognition from license plate images.
 
 Working on the Project:
 
-OpenCV is used to detect the contours of the number plate in the image and isolate it from the rest of the vehicle. After this, Pytesseract is used to recognize the characters on the number plate. These characters are then compared with the entries in the SQL database. If a match is found, the person is assumed to be a registered user and the parking gates are opened.
+To work on the ANPR with Parking System project, follow these steps:
+1. Install OpenCV and PyTesseract dependencies.
+2. Capture an image or video stream containing license plate images.
+3. Use OpenCV to detect the contours of the license plate, isolating it from the rest of the vehicle.
+4. Preprocess the license plate image, applying techniques like cropping, contrast stretching, and noise reduction.
+5. Utilize PyTesseract to recognize the characters on the license plate.
+6. Compare the recognized characters with entries in an SQL database.
+7. If a match is found, assume the person is a registered user and open the parking gates.
+
+Make sure to refer to the documentation and code files for more detailed instructions on setting up the project, configuring the database, and integrating the ANPR system with the parking gates.
